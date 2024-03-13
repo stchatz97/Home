@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Basic Page Needs
+================================================== -->
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<!-- Scripts -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>$('#myModal').modal()</script>
+<script src="js/formvalidation.js"></script>
+<script src="js/html5placeholder.jquery.js"></script>
+<script src="js/jquery.tweet.js"></script>
+</head>
+<body>
+<!-- Top Green Bar -->
+<div class="topline">
+</div>
+<!-- Top Green Bar Ends-->
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</a>
+			<div class="nav-collapse collapse">
+				<!-- Menu Links
+			================================================== -->
+				<!-- Pop up form (activated on "hire me" click)-->
+				<div id="myModal" class="modal hide fade hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+						<h3 id="myModalLabel">Send me a note</h3>
+					</div>
+					<div class="modal-body">
+						<div class="done">
+							<div class="alert alert-success">
+								<button type="button" class="close" data-dismiss="alert">x</button>
+								<strong>Message sent successfully!</strong><br/>
+							</div>
+						</div>
+						<div class="form">
+							<form method="post" action="process.php" id="contactform">
+								<table>
+								<tbody>
+								<tr class="element">
+									<td class="noborder">
+									</td>
+									<td class="noborder">
+										<input type="text" name="name" class="text input-xlarge" placeholder="Name">
+									</td>
+								</tr>
+								<tr class="element">
+									<td class="noborder">
+									</td>
+									<td class="noborder">
+										<input type="text" name="email" class="text input-xlarge" placeholder="E-mail address">
+									</td>
+								</tr>
+								<tr class="element texttop">
+									<td class="noborder">
+									</td>
+									<td class="noborder">
+										<textarea name="comment" class="text textarea input-xlarge contactarea" placeholder="Project details, requirements, budget"></textarea>
+									</td>
+								</tr>
+								<tr class="element">
+									<td class="noborder">
+										 &nbsp;
+									</td>
+									<td class="noborder">
+										<input type="submit" id="submit" class="btn" value="Submit">
+										<div class="loading">
+										</div>
+									</td>
+								</tr>
+								</tbody>
+								</table>
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+				<!-- End pop up content modal (activated on "hire me" click)-->
+			</div>
+			<!-- Menu Ends
+			================================================== -->
+			<!-- Logo-->
+			<a class="brand logo" href="#"><br/></a>
+			<!-- End Logo-->
+		</div>
+	</div>
+</div>
+<!-- Container starts
+================================================== -->
+<div class="container">
+	<!-- Main hero unit for a primary marketing message or call to action -->
+	<h1 class="title">Portfolio</h1>
+	<div class="titlelinesimple">
+	</div>
+	<!-- Portfolio
+	================================================== -->
+<div class="row center">
+    <div class="span16">
+        <div class="boxgrid thecombo">
+            <img class="cover" src="img/portofolio/rest-api.png" alt=""/>
+            <h3>Riot Games API</h3>
+            <p>
+              This project leverages Riot Games' REST API to automate the extraction of valuable gaming insights. Through advanced JSON indexing and function chaining, it swiftly retrieves data tailored to user input, offering details on win rates, top champion performances, and in-depth analyses of traits, units, and items. <br/><a href="Riot_Games_API.html" target="_blank">View code as HTML</a>
+        | <a href="Riot_Games_API.pdf" target="_blank">View code as PDF</a> <br/><a href="Demo.pdf" target="_blank">View web-app demo</a>
+            </p>
+        </div>
+		<div class="boxgrid slideright">
+            <img class="cover" src="img/portofolio/ab-testing.jpg" alt=""/>
+            <h3>A/B Testing: Game Engagement</h3>
+            <p>
+                By conducting A/B testing on two iterations of the mobile game Cookie Cats, insights into user engagement were gained. Employing dynamic Plotly plots, an in-depth examination of user behavior and interaction patterns was facilitated. This analytical approach enabled the formulation of hypotheses regarding the comparative effectiveness of the game's different versions. <br/><a href="GameEngagementExperiment.html" target="_blank">View as HTML</a>
+        | <a href="GameEngagementExperiment.pdf" target="_blank">View as PDF</a>
+            </p>
+        </div>
+        <div class="boxgrid thecombo">
+            <img class="cover" src="img/portofolio/stacked_regression.png" alt=""/>
+            <h3>Stacked Ensemble Regression House Prices</h3>
+            <p>         
+				House pricing analysis through systematic data preprocessing, EDA, and advanced modeling techniques. Steps involve removing redundant columns and addressing distributional issues via Box-Cox transformations. Bayesian optimization refines base models for optimal predictive performance, followed by ensemble methods to enhance performance. Results demonstrate improvements in performance metrics, including reduced RMSE, MAE, and MAPE, along with increased R² compared to baseline.<br/><a href="Stacked_Ensemble_Regression.html" target="_blank">View as HTML</a>
+        | <a href="Stacked_Ensemble_Regression.pdf" target="_blank">View as PDF</a>
+            </p>
+        </div>
+        <div class="boxgrid slideright">
+            <img class="cover" src="img/portofolio/credit-risk-analysis.png" alt=""/>
+            <h6>Optimizing Credit Risk Assessment Through Cost-Sensitive Learning</h6>
+            <p>The thesis deals with imbalanced datasets in peer-to-peer lending, using advanced models like CatBoost and XGBoost. It addresses the issue by adjusting class weights and creating a custom scoring function for profit maximization. Results show an 80% reduction in false negatives, indicating better identification of high-risk loans, and a 1031% increase in profitability with XGBoost. Overall, the methodology effectively manages risks in imbalanced datasets and maximizes peer-to-peer lending profitability while considering varying error costs. <a href="Thesis.pdf" target="_blank">View</a>
+            </p>
+        </div>
+        <div class="boxgrid thecombo">
+            <img class="cover" src="img/portofolio/stocks.png" alt=""/>
+            <h3>Dynamic Stock Dashboard</h3>
+            <p>
+                The project utilizes Yahoo Finance API for data retrieval. Through Tableau's dynamic functionality, users access a customizable dashboard by inputting the desired stock name and date. Insights into share price trends, volume changes, and company details are readily available, fostering data-driven decision-making.<br/><a href="Dashboard.html" target="_blank">View</a>
+            </p>
+        </div>
+        <div class="boxgrid slideright">
+            <img class="cover" src="img/portofolio/skin_lesion1.png" alt=""/>
+            <h3>Multiclass Skin Lesion Classification</h3>
+            <p>
+                This project utilizes a Convolutional Neural Network(CNN) for multiclass skin lesion classification. Hyperparameter tuning, data augmentation, early stopping, dropout and a learning rate scheduler are implemented to optimize model performance. Additionally, transfer learning with the Xception architecture is explored to enhance performance through improved feature extraction, increasing accuracy by 11% and recall by 35% compared to the baseline. <br/><a href="Skin_Lesion.pdf" target="_blank">View</a>
+            </p>
+        </div>
+    </div>
+</div>
+	<!-- Footer 
+================================================== -->
+	<div class="footerli">
+	<div class="footer center">
+		 &copy; Copyright Stavros Chatzipavlidis 2024
+	</div>
+</div>
+<!-- Ended Container-->
+<div class="footerend">
+</div>
+<!-- Portofolio Script 
+================================================== -->
+<script type="text/javascript">
+			$(document).ready(function(){
+				//To switch directions up/down and left/right just place a "-" in front of the top/left attribute
+				//Vertical Sliding
+				$('.boxgrid.slidedown').hover(function(){
+					$(".cover", this).stop().animate({top:'-260px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:300});
+				});
+				//Horizontal Sliding
+				$('.boxgrid.slideright').hover(function(){
+					$(".cover", this).stop().animate({left:'325px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:300});
+				});
+				//Diagnal Sliding
+				$('.boxgrid.thecombo').hover(function(){
+					$(".cover", this).stop().animate({top:'260px', left:'325px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px', left:'0px'},{queue:false,duration:300});
+				});
+				//Partial Sliding (Only show some of background)
+				$('.boxgrid.peek').hover(function(){
+					$(".cover", this).stop().animate({top:'90px'},{queue:false,duration:160});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:160});
+				});
+				//Full Caption Sliding (Hidden to Visible)
+				$('.boxgrid.captionfull').hover(function(){
+					$(".cover", this).stop().animate({top:'160px'},{queue:false,duration:160});
+				}, function() {
+					$(".cover", this).stop().animate({top:'260px'},{queue:false,duration:160});
+				});
+				//Caption Sliding (Partially Hidden to Visible)
+				$('.boxgrid.caption').hover(function(){
+					$(".cover", this).stop().animate({top:'160px'},{queue:false,duration:160});
+				}, function() {
+					$(".cover", this).stop().animate({top:'220px'},{queue:false,duration:160});
+				});
+			});
+		</script>
+</body>
+</html>
